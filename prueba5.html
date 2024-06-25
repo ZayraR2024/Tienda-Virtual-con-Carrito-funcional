@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body>
+    <div id="header">
+        <div id="titulo">
+            <h1>¡Bienvenido a nuestra tienda de labiales!</h1>
+        </div>
+        <div id="carrito">
+            <span id="contador-carrito">0</span>
+            <img src="Imagenes/carrito.png" alt="Carrito de Compras" id="carrito-img" onclick="mostrarCarrito()">
+            <div id="carrito-overlay" style="display: none;">
+                <h2>Carrito de Compras</h2>
+                <ul id="lista-carrito"></ul>
+                <p>Total: <span id="total">0</span></p>
+                <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+            </div>
+        </div>
+        <div id="logo">
+            <img src="logo.png" alt="Logo de la tienda">
+        </div>
+    </div>
+    <div id="items">
+        <div class="item">
+			<img src="Imagenes/gloss.png" width="500" height="500" alt=""/>
+            <p class="titulo">Labial Rojo</p> <!-- Cambios aquí -->
+            <p class="precio">$60</p> <!-- Cambios aquí -->
+            <button class="agregar-btn" onclick="agregarAlCarrito('Labial Rojo', 60)">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+			<img src="Imagenes/labial5.png" width="236" height="236" alt=""/>
+             <p class="titulo">Labial Rosa</p> <!-- Cambios aquí -->
+            <p class="precio">$50</p> <!-- Cambios aquí -->
+            <button class="agregar-btn" onclick="agregarAlCarrito('Labial Rosa', 50)">Agregar al Carrito</button>
+      </div>
+		 <div class="item">
+			<img src="Imagenes/fresa.png" width="236" height="236" alt=""/>
+             <p class="titulo">Balsamo de Fresa</p> <!-- Cambios aquí -->
+            <p class="precio">$40</p> <!-- Cambios aquí -->
+            <button class="agregar-btn" onclick="agregarAlCarrito('Balsamo de Fresa', 40)">Agregar al Carrito</button>
+      </div>
+		 <div class="item">
+			<img src="Imagenes/labial6.png" width="236" height="236" alt=""/>
+             <p class="titulo">Labial Morado</p> <!-- Cambios aquí -->
+            <p class="precio">$30</p> <!-- Cambios aquí -->
+            <button class="agregar-btn" onclick="agregarAlCarrito('Labial Morado', 30)">Agregar al Carrito</button>
+      </div>
+    </div>
+
+    <script src="scripts1.js"></script>
+</body>
+</html>

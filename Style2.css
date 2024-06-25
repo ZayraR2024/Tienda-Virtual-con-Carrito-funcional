@@ -1,0 +1,114 @@
+#header {
+    background-color: #FFDFE0;
+    color: black;
+    padding: 50px;
+    display: flex; /* Utilizamos flexbox */
+    align-items: center; /* Alineamos verticalmente */
+    justify-content: space-between; /* Alineamos horizontalmente */
+    margin-bottom: 20px; /* Añadimos margen inferior */
+}
+
+#titulo {
+    display: flex; /* Utilizamos flexbox */
+    align-items: center; /* Alineamos verticalmente */
+}
+
+#titulo h1 {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Eliminamos el margen para evitar desplazamientos innecesarios */
+}
+
+#carrito {
+    position: relative;
+    display: flex; /* Utilizamos flexbox */
+    align-items: center; /* Alineamos verticalmente */
+}
+
+#carrito-img {
+    width: 60px; /* Tamaño más grande */
+    cursor: pointer;
+}
+
+#contador-carrito {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #FF8080;
+    color: white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#carrito-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    border: 2px solid #FF80AB;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#logo {
+    margin-right: 20px; /* Añadimos margen derecho al logo */
+}
+
+#logo img {
+    width: 30px; /* Tamaño del logo más pequeño */
+}
+
+#items {
+    margin-top: 40px; /* Añadimos espacio arriba de los productos */
+    display: flex; /* Utilizamos flexbox */
+    flex-wrap: wrap; /* Permitimos que los elementos se envuelvan */
+    justify-content: space-between; /* Distribuimos uniformemente los elementos */
+}
+
+.item {
+    border: 2px solid #FF80AB;
+    padding: 10px;
+    width: calc(33.33% - 20px); /* Ajustamos el tamaño para que haya 3 elementos en una fila */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Espacio entre filas */
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.item img {
+    width: 80%; /* La imagen ocupa todo el ancho del cuadro */
+    height: auto; /* La altura se ajusta automáticamente */
+    border-radius: 3px; /* Agregamos un poco de borde redondeado a la imagen */
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.titulo {
+    font-weight: bold; /* Título en negrita */
+    font-size: 1.2em; /* Tamaño del título más grande */
+}
+
+.precio {
+    margin-top: 5px; /* Añadimos espacio arriba del precio */
+}
+
+.agregar-btn {
+    background-color: #FF80AB;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agregar-btn:hover {
+    background-color: #FF4081;
+}
